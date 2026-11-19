@@ -1,0 +1,72 @@
+# Icarus Verilog (iverilog) & GTKWave
+*.vvp
+*.vcd
+*.lxt
+*.lxt2
+*.fst
+*.ghw
+gtkwave.sav
+
+# Verilator
+obj_dir/
+*.vlt
+
+# ModelSim / QuestaSim
+work/
+transcript
+vsim.wlf
+*.wlf
+*.vstf
+modelsim.ini
+
+# Xilinx Vivado Simulator (XSim) & Synopsys VCS
+xsim.dir/
+*.jou
+*.log
+*.pb
+*.wdb
+simv
+simv.daidir/
+csrc/
+ucli.key
+
+# Xilinx Vivado
+*.cache/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+*.str
+.Xil/
+*.bit
+*.bin
+
+# Intel / Altera Quartus
+db/
+incremental_db/
+output_files/
+simulation/
+*.qws
+*.sof
+*.pof
+*.rbf
+*.rpt
+*.summary
+*.smsg
+*.pin
+*.jdi
+*.sld
+
+# Yosys / Nextpnr / IceStorm (FPGA Open Source)
+*.json
+*.asc
+*.blif
+*.edif
+
+# Archivos Temporales y del Sistema
+*.tmp
+*.bak
+*.swp
+*~
+.DS_Store
+Thumbs.db
