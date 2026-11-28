@@ -1,8 +1,8 @@
 module inst_mem (
     // direccion de intruccion actual
     input  wire [31:0] instrc_dr,
-    // numero de instruccion
-    output wire [31:0] n_instc
+    // instruccion recuperada
+    output wire [31:0] rec_instc
 );
     // Memoria de memoria (256 palabras de 32 bits)
     reg [31:0] mem [0:255];
@@ -11,6 +11,6 @@ module inst_mem (
         $readmemh("instrucciones.mem", mem);
     end
 
-    // Calculo de instruccion 8 bits - 2 LSB [9:2]
-    assign n_instc = mem[instrc_dr[9:2]]; 
+    // Recuperacion de instruccion 8 bits - 2 LSB [9:2]
+    assign rec_instc = mem[instrc_dr[9:2]]; 
 endmodule
